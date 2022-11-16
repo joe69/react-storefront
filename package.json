@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "env-cmd --no-override -f .env env-cmd --no-override -f .env.local --fallback turbo run build --cache-dir=.turbo",
-    "build:saleor-app-checkout": "pnpm run build --filter=saleor-app-checkout...",
+    "build:saleor-app-checkout": "pnpm run build --filter=saleor-app-checkout... --output public",
     "build:storefront": "pnpm run build --filter=storefront...",
     "start": "env-cmd --no-override -f .env env-cmd --no-override -f .env.local --fallback turbo run start --parallel --cache-dir=.turbo",
     "start:saleor-app-checkout": "pnpm run start --filter=saleor-app-checkout...",
